@@ -9,4 +9,6 @@
                  [org.clojure/data.json "1.0.0"]
                  [seancorfield/next.jdbc "1.1.613"]
                  [org.postgresql/postgresql "42.2.10"]]
+  :main better-day.core
+  :target-path "target/%s"
   :repl-options {:init-ns better_day.core})
