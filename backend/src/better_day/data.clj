@@ -7,6 +7,6 @@
   (json/write-str
    (map
     (fn [category]
-      {(keyword (:name category))
-       (db/get-items-for-category (:id category))})
+      {:title (:name category)
+       :items (db/get-items-for-category (:id category))})
     (db/get-categories))))
