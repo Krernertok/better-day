@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Item from './Item'
 
 const ItemGroup = ({ title, items }) => {
+  const [ showItems, toggleShowItems ] = useState(true)
+
+  const clickHandler = () => {
+    toggleShowItems(!showItems)
+  }
+
   return (
-    <div>
-      <h3>{ title }</h3>
+    <div id={ title }>
+      <h3 onClick={ clickHandler }>{ title }</h3>
       { items.map(item => <Item 
                             key={ item.id } 
-                            summary={ item.summary}
-                            description={ item.description}
+                            item={ item }
+                            showItems={ showItems }
                           />) }
     </div>
   )
