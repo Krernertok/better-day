@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-      <Header title='Better Days' />
+      <Header title='better days' />
       <Checklist itemGroups={items} />
     </>
   )

@@ -9,7 +9,7 @@ const ItemGroup = ({ title, items }) => {
   }
 
   return (
-    <div id={ title }>
+    <div id={ title } className="py-2">
       <h3 onClick={ clickHandler }>{ title }</h3>
       { items.map(item => <Item 
                             key={ item.id } 
