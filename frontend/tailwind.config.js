@@ -19,5 +19,7 @@ module.exports = {
       borderColor: ['checked'],
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

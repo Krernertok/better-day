@@ -1,0 +1,38 @@
+
+@import "tailwindcss/components";
+
+
+body {
+  @apply bg-gray-50;
+}
+
+.headerBar {
+  @apply w-full bg-lime-500;
+}
+
+.siteName {
+  @apply py-4 text-white text-2xl;
+  font-family: 'Fugaz One', sans-serif;
+}
+
+.contentContainer {
+  @apply container mx-auto flex;
+}
+
+.groupTitle {
+  @apply px-5 py-2 bg-lime-100 text-lg font-bold;
+}
+
+.itemGroup {
+  @apply bg-white my-5 rounded shadow font-bold;
+  font-family: Raleway;
+}
+
+.item {
+  @apply px-5 py-2 font-normal flex justify-between;
+  font-family: Quicksand;
+}
+
+.checkbox {
+  @apply rounded text-lime-500 h-5 w-5 focus:ring-transparent;
+}

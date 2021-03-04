@@ -3,7 +3,7 @@ import ItemGroup from './ItemGroup'
 
 const Checklist = ({ itemGroups }) => {
   return (
-    <div className="contentContainer flex-col checklist">
+    <div className="contentContainer flex-col">
       { itemGroups.map(itemGroup => <ItemGroup 
                                       key={itemGroup.title}
                                       title={itemGroup.title}

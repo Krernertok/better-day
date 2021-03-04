@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Item from './Item'
+import GroupTitle from './GroupTitle'
 
 const ItemGroup = ({ title, items }) => {
   const [ showItems, toggleShowItems ] = useState(true)
@@ -9,8 +10,8 @@ const ItemGroup = ({ title, items }) => {
   }
 
   return (
-    <div id={ title } className="py-2">
-      <h3 onClick={ clickHandler }>{ title }</h3>
+    <div id={ title } className="itemGroup">
+      <GroupTitle title={ title } clickHandler={ clickHandler } />
       { items.map(item => <Item 
                             key={ item.id } 
                             item={ item }
